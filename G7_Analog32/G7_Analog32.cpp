@@ -1,3 +1,15 @@
+/**
+* @file G7_Analog32.cpp
+* @author Takuya Urakawa (galileo-7.com)
+* @license MIT Licence
+*
+* @brief This is a library for Galileo-7 I2C 32ch AnalogInputs "OOMORI" Shield.
+* 	     I2C 32ch Analog-Digital Converter.
+*
+* @section HISTORY
+* v1.0 - First release
+*/
+
 #include "G7_Analog32.h"
 #include "Arduino.h"
 #include "Wire.h"
@@ -23,7 +35,7 @@
 #define ADS1015_CONFIG_HIGH_AIN0 (B11000001)
 #define ADS1015_CONFIG_HIGH_AIN1 (B11010001)
 
-#define ADS1015_CONFIG_LOW		 (B10010011)
+#define ADS1015_CONFIG_LOW (B10010011)
 
 // convert raw value to voltage (mV)
 #define ADC_RESULT_VOLTAGE_GAIN (3)
