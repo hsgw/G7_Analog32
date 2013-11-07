@@ -36,7 +36,11 @@ public:
 	void init(void);
 
 	//! 指定したピンの電圧を取得します
+<<<<<<< HEAD
 	/** @return 6.144Vを最大値とした11bit(0～2047)の値を返す
+=======
+	/** @return 6.144Vを最大値とした12bit(0～4095)の値を返す
+>>>>>>> 88ff3d018bf83428615191f819ba79ac5c1bd1c3
 	  * @note 電源電圧を基準としていません
 	  * @param _ic IC番号(AIN_A / AIN_B)
 	  * @param _pin ピン番号(0-16)
