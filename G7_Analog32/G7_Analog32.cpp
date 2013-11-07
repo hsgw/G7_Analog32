@@ -52,10 +52,11 @@ const uint8_t G7_Analog32::ADC_CONFIG_HIGH[2] = {
 };
 
 
-G7_Analog32::G7_Analog32(uint8_t _addr){
-	dio_addr = _addr + PCA9538_ADDR;
-	adc_addr = _addr + ADS1015_ADDR;
-	maxVoltage = 5000;
+G7_Analog32::G7_Analog32(uint8_t _addr)
+: dio_addr(_addr + PCA9538_ADDR),
+  adc_addr(_addr + ADS1015_ADDR),
+  maxVoltage(5000)
+{
 };
 
 // private methods
