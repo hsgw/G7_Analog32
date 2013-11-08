@@ -76,7 +76,6 @@ public:
 
 private:
 	static const uint8_t MUX_ADDR[16];
-	static const uint8_t ADC_CONFIG_HIGH[2];
 
 	uint8_t dio_addr;
 	uint8_t adc_addr;

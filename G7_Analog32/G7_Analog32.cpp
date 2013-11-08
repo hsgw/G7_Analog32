@@ -47,11 +47,6 @@ const uint8_t G7_Analog32::MUX_ADDR[16] = {
 	B00110000,B10110000,B01110000,B11110000
 };
 
-const uint8_t G7_Analog32::ADC_CONFIG_HIGH[2] = {
-	ADS1015_CONFIG_HIGH_AIN1,ADS1015_CONFIG_HIGH_AIN0
-};
-
-
 G7_Analog32::G7_Analog32(uint8_t _addr)
 : dio_addr(_addr + PCA9538_ADDR),
   adc_addr(_addr + ADS1015_ADDR),
@@ -114,13 +109,22 @@ void G7_Analog32::init(void){
 }
 
 int16_t G7_Analog32::readRawValue(uint8_t _ic, uint8_t _pin){
+	uint8_t reg;
 	// select mux
-	currentMuxAddr = (currentMuxAddr & (0x0F << _ic)) | (MUX_ADDR[_pin] >> _ic);
-	//Serial.println(currentMuxAddr,BIN);
+	if(_ic == 0){
+		reg = ADS1015_CONFIG_HIGH_AIN1;
+		currentMuxAddr = (currentMuxAddr & 0x0F) | (MUX_ADDR[_pin]);
+	}else if(_ic == 1){
+		reg = ADS1015_CONFIG_HIGH_AIN0;
+		currentMuxAddr = (currentMuxAddr & 0xF0) | (MUX_ADDR[_pin] >> 4);
+	}else{
+		return -1;
+	}
+	// Serial.println(currentMuxAddr,BIN);
 	i2cSendByte(dio_addr, PCA9538_REG_OUTPUT, currentMuxAddr);
 	delay(1);
 	// select adc mux and start convert
-	i2cSend2Bytes(adc_addr, ADS1015_REG_CONFIG, ADC_CONFIG_HIGH[_ic], ADS1015_CONFIG_LOW);
+	i2cSend2Bytes(adc_addr, ADS1015_REG_CONFIG, reg, ADS1015_CONFIG_LOW);
 	//Serial.println((uint16_t)i2cRead2Bytes(adc_addr, ADS1015_REG_CONFIG),BIN);
 	delay(1);
 	//Serial.println((uint16_t)i2cRead2Bytes(adc_addr, ADS1015_REG_CONFIG),BIN);
