@@ -3,11 +3,21 @@
 * @author Takuya Urakawa (galileo-7.com)
 * @license MIT Licence
 *
-* @brief This is a library for Galileo-7 I2C 32ch AnalogInputs "OOMORI" Shield.
+* @brief This is a library for Galileo-7 I2C 32ch Analog-Inputs "OOMORI" Shield.
 * 	     I2C 32ch Analog-Digital Converter.
 *
 * @section HISTORY
 * v1.0 - First release
+*/
+
+/*!
+ * @mainpage
+ * 
+ * ガリレオセブンにて販売中のI2C 32ch Analog-Inputs "大盛" ShieldのArduino用ライブラリです。<br
+ * I2Cで通信し、32chのアナログ入力を追加します。<br>
+ * <br>
+ * 詳しくは以下クラスのリファレンスを参照して下さい。
+ * - G7_Analog32
 */
 
 #ifndef G7_ANALOG32_H
