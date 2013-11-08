@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.5"/>
+<title>G7_Analog32: G7_Analog32.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">G7_Analog32
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 作成： Doxygen 1.8.5 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>メインページ</span></a></li>
+      <li><a href="annotated.html"><span>データ構造</span></a></li>
+      <li class="current"><a href="files.html"><span>ファイル</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="検索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>ファイル一覧</span></a></li>
+      <li><a href="globals.html"><span>グローバル</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全て</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>データ構造</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>ファイル</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>関数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>マクロ定義</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a>  </div>
+  <div class="headertitle">
+<div class="title">G7_Analog32.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This is a library for Galileo-7 I2C 32ch AnalogInputs "OOMORI" Shield. I2C 32ch Analog-Digital Converter.  
+<a href="#details">[詳細]</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_g7___analog32_8h_source.html">G7_Analog32.h</a>&quot;</code><br/>
+<code>#include &quot;Arduino.h&quot;</code><br/>
+<code>#include &quot;Wire.h&quot;</code><br/>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:aae929c84090b325485962c2ae9822c4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae929c84090b325485962c2ae9822c4b"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PCA9538_ADDR</b>&#160;&#160;&#160;(0x70)</td></tr>
+<tr class="separator:aae929c84090b325485962c2ae9822c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a526533841155b9f728fdbd0a536c321c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a526533841155b9f728fdbd0a536c321c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADS1015_ADDR</b>&#160;&#160;&#160;(0x48)</td></tr>
+<tr class="separator:a526533841155b9f728fdbd0a536c321c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc534b245c773ce990c823562527ecdb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc534b245c773ce990c823562527ecdb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PCA9538_REG_OUTPUT</b>&#160;&#160;&#160;(1)</td></tr>
+<tr class="separator:acc534b245c773ce990c823562527ecdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bf747a042b029e5752e2b6749555800"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6bf747a042b029e5752e2b6749555800"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>PCA9538_REG_CONFIG</b>&#160;&#160;&#160;(3)</td></tr>
+<tr class="separator:a6bf747a042b029e5752e2b6749555800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33a398a1ae798546b4352f3a37b36b2a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33a398a1ae798546b4352f3a37b36b2a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADS1015_REG_RESULT</b>&#160;&#160;&#160;(0x00)</td></tr>
+<tr class="separator:a33a398a1ae798546b4352f3a37b36b2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82a91f2fa67b86a3a0ba7968fdb21718"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82a91f2fa67b86a3a0ba7968fdb21718"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADS1015_REG_CONFIG</b>&#160;&#160;&#160;(0x01)</td></tr>
+<tr class="separator:a82a91f2fa67b86a3a0ba7968fdb21718"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ae0e6c0bd903b7303f68acf9c4a829"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27ae0e6c0bd903b7303f68acf9c4a829"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADS1015_REG_LO_THRESH</b>&#160;&#160;&#160;(0x02)</td></tr>
+<tr class="separator:a27ae0e6c0bd903b7303f68acf9c4a829"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ff3dc25d466aeb433a9a5d052683002"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ff3dc25d466aeb433a9a5d052683002"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADS1015_REG_HI_THRESH</b>&#160;&#160;&#160;(0x03)</td></tr>
+<tr class="separator:a6ff3dc25d466aeb433a9a5d052683002"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a30d6fce4c2e6640260b9bc4bdea9d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1a30d6fce4c2e6640260b9bc4bdea9d"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADS1015_CONFIG_HIGH_DEFAULT</b>&#160;&#160;&#160;(B01000001)</td></tr>
+<tr class="separator:ac1a30d6fce4c2e6640260b9bc4bdea9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b947a98404730502792cdd3926fe969"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b947a98404730502792cdd3926fe969"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADS1015_CONFIG_HIGH_AIN0</b>&#160;&#160;&#160;(B11000001)</td></tr>
+<tr class="separator:a0b947a98404730502792cdd3926fe969"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24bc0d786cbb816417812d3009063bba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24bc0d786cbb816417812d3009063bba"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADS1015_CONFIG_HIGH_AIN1</b>&#160;&#160;&#160;(B11010001)</td></tr>
+<tr class="separator:a24bc0d786cbb816417812d3009063bba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7b28842a5742b20b8f572d8710bfa6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e7b28842a5742b20b8f572d8710bfa6"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADS1015_CONFIG_LOW</b>&#160;&#160;&#160;(B10010011)</td></tr>
+<tr class="separator:a7e7b28842a5742b20b8f572d8710bfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15e0b0a7de3086333ca3b9d199197d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa15e0b0a7de3086333ca3b9d199197d8"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ADC_RESULT_VOLTAGE_GAIN</b>&#160;&#160;&#160;(3)</td></tr>
+<tr class="separator:aa15e0b0a7de3086333ca3b9d199197d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">説明</h2>
+<div class="textblock"><p>This is a library for Galileo-7 I2C 32ch AnalogInputs "OOMORI" Shield. I2C 32ch Analog-Digital Converter. </p>
+<dl class="section author"><dt>作者</dt><dd>Takuya Urakawa (galileo-7.com)  MIT Licence</dd></dl>
+<h1><a class="anchor" id="HISTORY"></a>
+HISTORY</h1>
+<p>v1.0 - First release </p>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+G7_Analog32に対してSat Nov 9 2013 01:30:12に生成されました。 &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.5
+</small></address>
+</body>
+</html>
